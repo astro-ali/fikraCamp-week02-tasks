@@ -1,12 +1,6 @@
-$(function() {
-    'use strict';
-
-    $(window).scroll(function() {
-        if($('nav').offset().top > 50){
-            $('nav').addClass('fixed-top');
-        }
-        else {
-            $('nav').removeClass('fixed-top');
-        }
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $("nav");
+      $nav.toggleClass('fixed-top', $(document).scrollTop() > 70);
     });
-});
+  });

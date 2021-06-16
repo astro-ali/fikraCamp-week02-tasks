@@ -1,5 +1,43 @@
 .features {
-    height: 400px;
     width: 100%;
-    background-color: #1a2642;
+    
+    .feature-title {
+        padding: 7.8125rem 0;
+        border-bottom: 2px solid #ccc;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    .feature-cards {
+        margin-top: 6rem;
+        padding-bottom: 6rem;
+        justify-content: space-around;
+        border-bottom: 2px solid #ccc;
+        .card {
+            width: 433px;
+            padding: 20px 0px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+
+            h4 {
+                font-size: 26px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #7c7c7c;
+                margin-bottom: 40px;
+            }
+        }
+    }
 }

@@ -1,0 +1,57 @@
+.instagram {
+    margin-top: 6rem;
+    border-bottom: 2px solid #ccc;
+    &-title h3 {
+        padding-top: 6rem;
+        font-size: 40px;
+        font-weight: 300;
+        padding-bottom: 8rem;
+        text-align: center;
+    }
+
+    &-gallary {
+        margin-bottom: 8rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: auto;
+        grid-gap: 5rem;
+        grid-template-areas: 
+                'img-1 img-1 img-2 img-3'
+                'img-1 img-1 img-4 img-5'
+        ;
+        
+        &-photo {
+            aspect-ratio: 1;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                object-position: center;
+                object-fit: cover;
+
+            }
+        } 
+
+        .img-1 {
+            grid-area: img-1;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .img-2 {
+            grid-area: img-2;
+        }
+        .img-3 {
+            grid-area: img-3;
+        }
+        .img-4 {
+            grid-area: img-4;
+        }
+        .img-5 {
+            grid-area: img-5;
+        }
+       
+    }
+}

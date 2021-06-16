@@ -1,0 +1,28 @@
+footer {
+    width: 100%;
+}
+
+.social-media {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+
+    &-item {
+        color: #909090;
+        margin-right: 40px;
+
+        a {
+            font-size: 24px;
+            color: #909090;
+            transition: .35s all ease-in-out;
+            &:hover {
+                color: #272727;
+            }
+        }      
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
